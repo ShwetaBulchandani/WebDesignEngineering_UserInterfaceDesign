@@ -123,6 +123,7 @@ body {
   max-width: 40vw;
   border-radius: 20px;
   margin: 10 auto;
+  gap: 10px;
 }
 .input {
   border: none;
@@ -142,12 +143,12 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 .label {
   align-self: flex-start;
-  margin-bottom: 5px;
+  /* margin-bottom: 5px; */
   font-size: 1rem;
 }
-.label-password {
+/* .label-password {
   margin-top: 2rem;
-}
+} */
 .input-header-text {
   margin-bottom: 30px;
   font-size: 1.5rem;
