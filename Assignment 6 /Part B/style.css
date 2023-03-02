@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+#stopwatch{
+    font-size: 130px;
+    font-weight: 700;
+}
+
+#stopwatch span{
+    display: inline-block;
+    min-width: 150px;
+}
+
+button{
+    padding: 12px 25px;
+    font-size: 20px;
+    background-image: linear-gradient(-180deg, #FF7E31, #E62C03);
+    border: none;
+    border-radius: 15px;
+    width: 175px;
+}

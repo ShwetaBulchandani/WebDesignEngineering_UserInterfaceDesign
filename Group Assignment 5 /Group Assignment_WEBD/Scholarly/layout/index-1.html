@@ -1,0 +1,1350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Scholarly</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium Bootstrap v5.1.3 Landing Page Template" />
+    <meta name="keywords" content="bootstrap v5.1.3, premium, marketing, multipurpose" />
+    <meta content="Themesdesign" name="author" />
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" />
+
+    <!-- Bootstrap css-->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Materialdesign icon-->
+    <link rel="stylesheet" href="css/materialdesignicons.min.css" type="text/css" />
+
+    <!-- Swiper Slider css -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" type="text/css" />
+
+    <!-- Custom Css -->
+    <link href="css/style.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- colors -->
+    <link href="css/colors/default.css" rel="stylesheet" type="text/css" id="color-opt" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"></script>
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar-navlist" data-bs-offset="60">
+
+    <!--start page Loader -->
+    <div id="preloader">
+        <div id="status">
+            <div class="load">
+                <hr />
+                <hr />
+                <hr />
+                <hr />
+            </div>
+        </div>
+    </div>
+    <!--end page Loader -->
+
+    <!-- START NAVBAR -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top sticky">
+        <div class="container">
+            <a class="navbar-brand" href="index-1.html"><img src="images/logo-dark.png" alt="" height="23">
+                Scholarly</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="mdi mdi-menu text-muted"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="navbar-navlist">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Services</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Sample Papers<i class="mdi mdi-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a href="images/PDF/GRE.pdf" download class="nav-link">GRE Sample Paper</a>
+                            <li><a href="images/PDF/TOEFL.pdf" download class="nav-link">TOEFL Sample Paper</a>
+                            <li><a href="images/PDF/IELTS.pdf" download class="nav-link">IELTS Sample Paper</a>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#price">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faq">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Blog <i class="mdi mdi-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="nav-link" href="#blog">Blog</a></li>
+                            <li><a class="nav-link" href="blog-list.html">Blog List</a></li>
+                            <li><a class="nav-link" href="blog-details.html">Blog Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasExample"
+                            role="button" aria-controls="offcanvasExample">Login</a>
+                    </li>
+                </ul>
+                <!--end navbar-nav-->
+                <ul class="list-inline mb-0 ps-lg-4 ms-2">
+                    <li class="list-inline-item">
+                        <a href="#" class="primary-link"><i class="mdi mdi-facebook"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" class="primary-link"><i class="mdi mdi-twitter"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" class="primary-link"><i class="mdi mdi-instagram"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <!--end collapse-->
+        </div>
+        <!--end container-->
+    </nav>
+    <!-- END NAVBAR -->
+    <!--OFF CANVAS Component-->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Log in</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                Login to your account.<br>
+                Don't have an account?<a href="#">Sign up</a>
+            </div>
+            <br>
+            <form>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address*</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password*</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                </div>
+                <span toggle="#password-field" class="field-icon toggle-password" style="display: none;"></span>
+                <p class="mt-2"><a href="#">Forgot password?</a></p>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+    <!--Close OFF CANVAS Component-->
+
+    <!-- START HOME -->
+    <section class="bg-home4 overflow-hidden" id="home">
+        <div class="container">
+            <div class="position-relative" style="z-index: 1;">
+                <div class="row align-items-center">
+                    <div class="col-xl-5 col-lg-6">
+                        <div>
+                            <h6 class="home-subtitle text-primary mb-4">Building A Better World One Student At A Time
+                            </h6>
+                            <h1>Achieving Excellence Together</h1>
+                            <p class="text-black-50 fs-17 pt-4">Scholarly® is the world’s most widely used admission
+                                test preparation website for
+                                students. More than 6 Million students have said hello to
+                                stress free learning </p>
+                            <div class="text-center subscribe-form mt-5">
+                                <form action="#">
+                                    <input type="text" class="control-form" id="inputemail"
+                                        placeholder="Enter your email">
+                                    <button type="submit" data-bs-toggle="collapse" href="#collapseExample" class="btn btn-primary">Subscribe</button>
+                                      <div class="collapse" id="collapseExample">
+                                        <div class="card card-body">
+                                          Welcome! You have successfully subscribed to Scholarly.
+                                        </div>
+                                      </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end col-->
+                    <div class="col-lg-6 offset-xl-1">
+                        <div class="mt-lg-0 mt-5">
+                            <img src="images/home/home1.png" alt="home04" class="home-img">
+                        </div>
+                    </div>
+                </div>
+                <!--end row-->
+            </div>
+        </div>
+        <!--end container-->
+    </section>
+    <div class="position-relative">
+        <div class="shape overflow-hidden text-white position-absolute">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                style="width: 100%;" height="250" preserveAspectRatio="none" viewBox="0 0 1440 250">
+                <g mask="url(&quot;#SvgjsMask1006&quot;)" fill="none">
+                    <path d="M 0,246 C 288,210 1152,102 1440,66L1440 250L0 250z" fill="rgba(255, 255, 255, 1)"></path>
+                </g>
+                <defs>
+                    <mask id="SvgjsMask1006">
+                        <rect width="1440" height="250" fill="#ffffff"></rect>
+                    </mask>
+                </defs>
+            </svg>
+        </div>
+    </div>
+    <!-- END HOME -->
+
+    <!-- START FEATURES -->
+    <section class="section" id="features">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="text-center mb-5">
+                        <h3>Services we offer!</h3>
+                        <p class="text-muted">Let the preparation begin!</p>
+                    </div>
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-box card border-0 mt-3">
+                        <div class="card-body">
+                            <div class="feature-icon mx-auto">
+                                <i class="mdi mdi-chart-areaspline"></i>
+                            </div>
+                            <div class="mt-4">
+                                <h6 class="mb-3 fs-17">SAT</h6>
+                                <p class="text-muted">Show colleges you're ready. Learn about the SAT Suite of
+                                    Assessments, which includes the SAT, PSAT/NMSQT, PSAT 10, and PSAT 8/9. Personalized
+                                    for youWe'll create a tailored practice plan for you based on a diagnostic or your
+                                    SAT or PSAT/NMSQT® scores. Study smarter with SCHOLARLY and raise your score on the
+                                    S.A.T
+                                </p>
+                            </div>
+                            <div class="feature-link">
+                                <a href="#" class="text-primary text-decoration-underline">Learn More <i
+                                        class="mdi mdi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <!--end card-body-->
+                    </div>
+                    <!--end feature-box-->
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-box card border-0 mt-3">
+                        <div class="card-body">
+                            <div class="feature-icon mx-auto">
+                                <i class="mdi mdi-gift"></i>
+                            </div>
+                            <div class="mt-4">
+                                <h6 class="mb-3 fs-17">GMAT</h6>
+                                <p class="text-muted">Get into a top 25 MBA program. Completing our GMAT 700+ course
+                                    guarantees a 700 score*. Comprehensive test prep for high-achieving students. Learn
+                                    more! Study from the comfort of your home. 500+ Lessons, 3000+ Questions, 800+ Video
+                                    Solutions. TTP GMAT Quant is an innovative, ultra-clear and super comprehensive. Get
+                                    your best possible GMAT score in record speed, thanks to our adaptive learning
+                                    technology, premium content, and elite tutors.</p>
+                            </div>
+                            <div class="feature-link">
+                                <a href="#" class="text-primary text-decoration-underline">Learn More <i
+                                        class="mdi mdi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <!--end card-body-->
+                    </div>
+                    <!--end feature-box-->
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-box card border-0 mt-3">
+                        <div class="card-body">
+                            <div class="feature-icon mx-auto">
+                                <i class="mdi mdi-xml"></i>
+                            </div>
+                            <div class="mt-4">
+                                <h6 class="mb-3 fs-17">IELTS</h6>
+                                <p class="text-muted">Improve your IELTS score with our online self-study course. Get
+                                    access to comprehensive video lessons, practice questions, and more! Master the
+                                    IELTS test in this complete online course. Start today & become an expert. Join
+                                    millions of learners from around the world already learning on Scholarly! 30-day
+                                    guarantee. Learn on your schedule. Improve your skills. Real-world expert</p>
+                            </div>
+                            <div class="feature-link">
+                                <a href="#" class="text-primary text-decoration-underline">Learn More <i
+                                        class="mdi mdi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <!--end card-body-->
+                    </div>
+                    <!--end feature-box-->
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-box card border-0 mt-3">
+                        <div class="card-body">
+                            <div class="feature-icon mx-auto">
+                                <i class="mdi mdi-webpack"></i>
+                            </div>
+                            <div class="mt-4">
+                                <h6 class="mb-3 fs-17">TOEFL</h6>
+                                <p class="text-muted">Pass Your TOEFL Test With Our Practice Tests, Study Guides,
+                                    Courses & Videos. Learn faster. Stay motivated. Study smarter. Easy to learn.
+                                    Prepare for tests. Learn anywhere, anytime</p>
+                            </div>
+                            <div class="feature-link">
+                                <a href="#" class="text-primary text-decoration-underline">Learn More <i
+                                        class="mdi mdi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <!--end card-body-->
+                    </div>
+                    <!--end feature-box-->
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-box card border-0 mt-3">
+                        <div class="card-body">
+                            <div class="feature-icon mx-auto">
+                                <i class="mdi mdi-responsive"></i>
+                            </div>
+                            <div class="mt-4">
+                                <h6 class="mb-3 fs-17">GRE</h6>
+                                <p class="text-muted"> Learn every concept and strategy you need to conquer the GRE®
+                                    verbal and math sections, plus shortcuts and tips from the experts. Build a
+                                    rock-solid foundation with 600+ clear, easy-to-digest lessons organized to maximize
+                                    your learning. Strategically focus your study efforts and review with smart
+                                    analytics, so your GRE® prep is more efficient and effective</p>
+                            </div>
+                            <div class="feature-link">
+                                <a href="#" class="text-primary text-decoration-underline">Learn More <i
+                                        class="mdi mdi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <!--end card-body-->
+                    </div>
+                    <!--end feature-box-->
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-box card border-0 mt-3">
+                        <div class="card-body">
+                            <div class="feature-icon mx-auto">
+                                <i class="mdi mdi-leaf"></i>
+                            </div>
+                            <div class="mt-4">
+                                <h6 class="mb-3 fs-17">APTITUTE TEST</h6>
+                                <p class="text-muted"> Practice with our online aptitude tests and pass your employee
+                                    aptitude test or school entrance exam with ease.
+                                    Try our practice tests for free or sign up for one of our comprehensive test
+                                    preparation packages.
+                                    Choose a test category above or try a mixed aptitude test for free
+                                </p>
+                            </div>
+                            <div class="feature-link">
+                                <a href="#" class="text-primary text-decoration-underline">Learn More <i
+                                        class="mdi mdi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <!--end card-body-->
+                    </div>
+                    <!--end feature-box-->
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+        </div>
+        <!--end container-->
+    </section>
+    <!-- END FEATURES -->
+
+
+    <!-- START Process -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="text-center mb-4">
+                        <h3>How It Works?</h3>
+                        <p class="text-muted">Prep smart at an affordable price. Improve Your Score, Guaranteed!</p>
+                    </div>
+                </div>
+                <!--end col-->
+                <div class="col-lg-10">
+                    <div class="timeline-page position-relative py-4">
+                        <div class="timeline-item mb-lg-5 pb-5">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="text-center mb-5 mb-lg-0">
+                                        <img src="images/work-1.png" alt="Work" class="img-fluid">
+                                    </div>
+                                </div>
+                                <!--end col-->
+                                <div class="col-lg-6">
+                                    <div class="works-description-right text-start bg-light mx-lg-3 mx-4">
+                                        <h5 class="fs-18">Tell us your plan</h5>
+                                        <p class="text-muted mb-0">It is a long established fact that a student will be
+                                            distracted by the abundant content of type of questions when looking on the
+                                            internet. The
+                                            point of using Scholarly is that it has a more-or-less on-point questions.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!--end col-->
+                            </div>
+                            <!--end row-->
+                        </div>
+                        <!--end timeline-item-->
+
+                        <div class="timeline-item mb-5 pb-5">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="works-description-left text-start bg-light mx-lg-3 mx-4 text-lg-end">
+                                        <h5 class="fs-18">Join our team at Scholarly</h5>
+                                        <p class="text-muted mb-0">We will help you with questions you have about any of
+                                            our material. Send us a message while you're studying, and we'll get back to
+                                            you quickly. We do have limitations to how much we can help any individual
+                                            student, but in most cases (for 99% of students), we can answer all of your
+                                            questions!
+                                        </p>
+                                    </div>
+                                </div>
+                                <!--end col-->
+                                <div class="col-lg-6 order-first order-lg-last">
+                                    <div class="text-center mb-5 mb-lg-0">
+                                        <img src="images/work-2.png" alt="Work" class="img-fluid">
+                                    </div>
+                                </div>
+                                <!--end col-->
+                            </div>
+                            <!--end row-->
+                        </div>
+                        <!--end timeline-item-->
+                        <div class="timeline-item">
+                            <div class="row align-items-start">
+                                <div class="col-lg-6">
+                                    <div class="text-center mb-5 mb-lg-0">
+                                        <img src="images/work-3.png" alt="Work" class="img-fluid">
+                                    </div>
+                                </div>
+                                <!--end col-->
+                                <div class="col-lg-6">
+                                    <div class="works-description-right text-start bg-light mx-lg-3 mx-4">
+                                        <h5 class="fs-18">Final Step - D Day !</h5>
+                                        <p class="text-muted mb-0">You wil be well prepared for this day as you would
+                                            have studied and practiced all the types of questions that could be asked in
+                                            the exam. You will ace the exam with flying colors.</p>
+                                    </div>
+                                </div>
+                                <!--end col-->
+                            </div>
+                            <!--end row-->
+                        </div>
+                        <!--end timeline-item-->
+                    </div><!-- timeline-page -->
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+        </div>
+        <!--end container-->
+    </section>
+    <!-- END Process -->
+
+
+    <!-- START FEATURE  -->
+    <section class="section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <div class="features-box">
+                        <h3 class="mb-4">You are one step closer to your dream University!
+                        </h3>
+                        <p class="text-muted mb-4">The future destiny of your child is not a matter of chance but a
+                            matter of choice, not something to be waited for but something to be achieved.</p>
+                        <div class="row" id="counter">
+                            <div class="col-md-5 col-6">
+                                <div>
+                                    <h5 class="counter_value" data-target="4954">&nbsp;</h5>
+                                    <h6 class="text-muted">Happy Students</h6>
+                                </div>
+                            </div>
+                            <!--end col-->
+                            <div class="col-md-5 col-6">
+                                <div>
+                                    <h5 class="counter_value" data-target="1599">&nbsp;</h5>
+                                    <h6 class="text-muted">Aced in Exams</h6>
+                                </div>
+                            </div>
+                            <!--end col-->
+                        </div>
+                        <!--end row-->
+                        <div class="mt-4">
+                            <a href="#" class="btn btn-primary">Learn More <i class="mdi mdi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <!--end feature-box-->
+                </div>
+                <!--end col-->
+                <div class="col-lg-6 offset-lg-1">
+                    <div class="text-center mt-5 mt-lg-0">
+                        <img src="images/creativity.webp" alt="Features" class="img-fluid">
+                    </div>
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+        </div>
+        <!--end container-->
+    </section>
+    <!-- END FEATURE -->
+    <section class="page-section portfolio" id="portfolio">
+<!-- Carousel wrapper -->
+    <div class="text-center mb-4">
+        <h3>Our Reviews</h3>
+    </div>
+    <br>
+    <br>
+<div id="carouselExampleControls" class="carousel slide text-center carousel-dark" data-mdb-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="rounded-circle shadow-1-strong mb-4"
+          src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp" alt="avatar"
+          style="width: 150px;" />
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-8">
+            <h5 class="mb-3">Karl Brighton</h5>
+            <p>Canada</p>
+            <p class="text-muted">
+              <i class="fas fa-quote-left pe-2"></i>
+              "I enrolled in the weekly plans of AptituteTest and was able to score 110/120 on the TOEFL. I appreciate the quality of study material and thank the institute. I wish AptitudeTest all the very best and hope that it continues to help hundreds of students do well on the exam"
+            </p>
+          </div>
+        </div>
+        <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+          <li><i class="fas fa-star fa-sm"></i></li>
+          <li><i class="fas fa-star fa-sm"></i></li>
+          <li><i class="fas fa-star fa-sm"></i></li>
+          <li><i class="fas fa-star fa-sm"></i></li>
+          <li><i class="far fa-star fa-sm"></i></li>
+        </ul>
+      </div>
+      <div class="carousel-item">
+        <img class="rounded-circle shadow-1-strong mb-4"
+          src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(32).webp" alt="avatar"
+          style="width: 150px;" />
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-8">
+            <h5 class="mb-3">Ben Spiff</h5>
+            <p>USA</p>
+            <p class="text-muted">
+              <i class="fas fa-quote-left pe-2"></i>
+              I just received my TOEFL score and I received 109 with 28 in Speaking! ! That's pretty unbelievable to me and I guess the complete credit goes to AptitudeTest preparation course for putting up such great and effective practice exercises. Even the listening section was far too similar with the ones I practiced here in your website!""
+            </p>
+          </div>
+        </div>
+        <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+          <li><i class="fas fa-star fa-sm"></i></li>
+          <li><i class="fas fa-star fa-sm"></i></li>
+          <li><i class="fas fa-star fa-sm"></i></li>
+          <li><i class="fas fa-star fa-sm"></i></li>
+          <li><i class="far fa-star fa-sm"></i></li>
+        </ul>
+      </div>
+      <div class="carousel-item">
+        <img class="rounded-circle shadow-1-strong mb-4"
+          src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp" alt="avatar" style="width: 150px;" />
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-8">
+            <h5 class="mb-3">Anna Deynah</h5>
+            <p>United Kingdom</p>
+            <p class="text-muted">
+              <i class="fas fa-quote-left pe-2"></i>
+              "I felt vocabulary exercises and academic videos are useful because no other websites have this clarity in teaching academic words that are mostly used by ETS TOEFL exams. I found those vocabulary sessions are interesting since it has pictures and definitions with the word that you can easily relate the word with real-world situations. "
+            </p>
+          </div>
+        </div>
+        <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+          <li><i class="fas fa-star fa-sm"></i></li>
+          <li><i class="fas fa-star fa-sm"></i></li>
+          <li><i class="fas fa-star fa-sm"></i></li>
+          <li><i class="fas fa-star fa-sm"></i></li>
+          <li><i class="far fa-star fa-sm"></i></li>
+        </ul>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleControls"
+      data-mdb-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleControls"
+      data-mdb-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+<!--PROGRESS BAR-->
+<section>
+        <br>
+        <br>
+        <br>
+            <div class="text-center mb-4">
+                <h3>Students improved their Score by</h3>
+            </div>
+            <div id="section04" class="container" style="padding-top: 170px 0px">
+                <p> TOEFL </p>
+                <div class="progress" style="margin-top:25px; ; height: 25px;" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                     <div class="progress-bar  progress-bar-striped progress-bar-animated" style="width: 25%"> 25%</div>
+                    </div>
+                    <br>
+                    <p>
+                        MATHEMATIC APTITUDE
+                    </p>
+                    <div class="progress" style="margin-top:25px; height: 25px;" role="progressbar" aria-label="Basic example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                         <div class="progress-bar  progress-bar-striped progress-bar-animated" style="width: 50%"> 50%</div>
+                        </div>
+                        <br>
+                        <p>
+                            LOGICAL REASONING
+                        </p>
+                        <div class="progress" style="margin-top:25px; height: 25px;" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                             <div class="progress-bar  progress-bar-striped progress-bar-animated" style="width: 75%"> 75%</div>
+                            </div>
+                            <br>
+                            <p> ANALYTICS</p>
+                            <div class="progress" style="margin-top:25px; height: 25px;" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar  progress-bar-striped progress-bar-animated" style="width: 100%">100%</div>
+                            </div>
+                            </div>
+                            <br> <br> <br>
+            
+        </section>
+
+    <!--END PROGRESS BAR-->
+
+    <!-- START PRICING -->
+    <section class="section bg-light" id="price">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="text-center mb-4">
+                        <h3>Our Pricing</h3>
+                        <p class="text-muted mt-2">Pick a Scholarly Premium Plan that fits your style</p>
+                    </div>
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="price-box card border-0 mt-4">
+                        <div class="text-center">
+                            <h5 class="mb-0">Starter - 1 month plan</h5>
+                        </div>
+                        <div class="plan-price text-center mt-4">
+                            <h1 class="text-primary mb-0 display-4 fw-medium"><sup>$</sup>9<sub
+                                    class="text-muted">/month</sub></h1>
+                        </div>
+                        <div class="price-features mt-5">
+                            <p><i class="mdi mdi-check text-primary"></i> Comprehensive coverage of Math, Verbal and AWA
+                                <span class="fw-medium float-end"></span>
+                            </p>
+                            <p><i class="mdi mdi-check text-primary"></i> Helpful video lessons <span
+                                    class="fw-medium float-end"></span></p>
+                            <p><i class="mdi mdi-close text-primary"></i> Study schedules <span
+                                    class="fw-medium float-end"></span></p>
+                            <p><i class="mdi mdi-check text-primary"></i> Score Predictor <span
+                                    class="fw-medium float-end"></span> </p>
+                            <p><i class="mdi mdi-close text-primary"></i> Pause your plan <span
+                                    class="fw-medium float-end"></span></p>
+                        </div>
+                        <div class="text-center mt-4">
+                            <a href="#" class="btn btn-outline-primary w-100">Join Now</a>
+                        </div>
+                    </div>
+                    <!--end pricing-box-->
+                </div>
+                <!--end col-->
+                <div class="col-md-6 col-lg-4">
+                    <div class="price-box card border-0 mt-4">
+                        <div class="ribbon">20% sale</div>
+                        <div class="text-center">
+                            <h5 class="mb-0">Advanced - 3 Month Plan</h5>
+                        </div>
+                        <div class="plan-price text-center mt-4">
+                            <h1 class="text-primary mb-0 display-4 fw-medium"><sup>$</sup>19<sub
+                                    class="text-muted">/month</sub></h1>
+                        </div>
+                        <div class="price-features mt-5">
+                            <p><i class="mdi mdi-check text-primary"></i> Comprehensive coverage of Math, Verbal and AWA
+                                <span class="fw-medium float-end"></span>
+                            </p>
+                            <p><i class="mdi mdi-check text-primary"></i> Helpful video lessons <span
+                                    class="fw-medium float-end"></span></p>
+                            <p><i class="mdi mdi-close text-primary"></i> Study schedules <span
+                                    class="fw-medium float-end"></span></p>
+                            <p><i class="mdi mdi-check text-primary"></i> Score Predictor <span
+                                    class="fw-medium float-end"></span> </p>
+                            <p><i class="mdi mdi-check text-primary"></i> Pause your plan <span
+                                    class="fw-medium float-end"></span></p>
+                        </div>
+                        <div class="text-center mt-4">
+                            <a href="#" class="btn btn-primary w-100">Join Now</a>
+                        </div>
+                    </div>
+                    <!--end pricing-box-->
+                </div>
+                <!--end col-->
+                <div class="col-md-6 col-lg-4">
+                    <div class="price-box card border-0 mt-4">
+                        <div class="text-center">
+                            <h5 class="mb-0">Professional - 6 month plan</h5>
+                        </div>
+                        <div class="plan-price text-center mt-4">
+                            <h1 class="text-primary mb-0 display-4 fw-medium"><sup>$</sup>29<sub
+                                    class="text-muted">/month</sub></h1>
+                        </div>
+                        <div class="price-features mt-5">
+                            <p><i class="mdi mdi-check text-primary"></i> Comprehensive coverage of Math, Verbal and AWA
+                                <span class="fw-medium float-end"></span>
+                            </p>
+                            <p><i class="mdi mdi-check text-primary"></i> Helpful video lessons <span
+                                    class="fw-medium float-end"></span></p>
+                            <p><i class="mdi mdi-check text-primary"></i> Study schedules <span
+                                    class="fw-medium float-end"></span></p>
+                            <p><i class="mdi mdi-check text-primary"></i> Score Predictor <span
+                                    class="fw-medium float-end"></span> </p>
+                            <p><i class="mdi mdi-check text-primary"></i> Pause your plan <span
+                                    class="fw-medium float-end"></span></p>
+                        </div>
+                        <div class="text-center mt-4">
+                            <a href="#" class="btn btn-outline-primary w-100">Join Now</a>
+                        </div>
+                    </div>
+                    <!--end pricing-box-->
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+        </div>
+        <!--end container-->
+    </section>
+    <!-- END PRICING -->
+
+
+    <!-- START FAQ -->
+    <section class="section" id="faq">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="text-center mb-5 pb-2">
+                        <h3>How can we help you?</h3>
+                        <p class="text-muted mt-2">Help us help you achieve your dream.</p>
+                    </div>
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne" style="font-size: large;">
+                        Who should use Scholarly?
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                      <code style="color:black; font-size: large;">Anyone can use Scholarly, but it's best for individuals who
+                        fall into one of the following categories:
+                        <br>
+                        Self-studiers: those who prefer to study on their own time and at their own pace.
+                        <br>
+                        Individuals looking for more practice: those who want additional practice after
+                        having completed the Official practice questions. <br>
+                        Video-lovers: those who learn better by watching video than through reading or
+                        live-learning. Every practice question has a video explanation. <br>
+                        Busy professionals: those who do not have much time to study and can only sneak in a
+                        few minutes here and there.</code>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo" style="font-size: large;">
+                        Can I create my own custom practice session?
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">
+                <code style="color:black; font-size: large;"> Yes. You can choose the number of questions you want to
+                    answer and create practice sessions based on:
+                    <br></br>
+                    1) Section
+                    2) Difficulty
+                    3) Previously answered questions.
+                    <br></br>
+                    You can also exit a session at any time, and all the questions you did not answer
+                    will be available for your next session.</code>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree" style="font-size: large;">
+                        What is the refund policy?
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                <code style="color:black; font-size: large;">If you are unhappy with the product for any reason, let us
+                    know within 7 days of purchasing or upgrading your account, and we'll cancel your
+                    account and give you a full refund. Email us at help@scholarly.com.
+                </code>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+            <!--end row-->
+        </div>
+        <!--end container-->
+    </section>
+    <!-- END FAQ -->
+
+
+    <!-- START ABOUT -->
+    <section class="section bg-light" id="about">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="text-center">
+                        <h3>We'r dynamic team of talented people of innovative & marketing expert</h3>
+                        <p class="text-muted pt-2">We’re a bunch of education nerds who get super stoked about helping
+                            students achieve their academic dreams.</p>
+                    </div>
+                </div>
+            </div>
+            <!--end row-->
+
+            <div class="row justify-content-center mt-5">
+                <div class="col-md-6 col-lg-3">
+                    <div class="text-center mt-3">
+                        <h3>
+                            <span class="counter_value" data-target="1499">120</span><span>+</span>
+                        </h3>
+                        <p class="text-muted">Complete Projects</p>
+                    </div>
+                </div>
+                <!--end col-->
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="text-center mt-3">
+                        <h3>
+                            <span class="counter_value" data-target="1080">120</span><span>K</span>
+                        </h3>
+                        <p class="text-muted">Satisfied Students</p>
+                    </div>
+                </div>
+                <!--end col-->
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="text-center mt-3">
+                        <h3 class="counter_value" data-target="608"></h3>
+                        <p class="text-muted">Team Members</p>
+                    </div>
+                </div>
+                <!--end col-->
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="text-center mt-3">
+                        <h3 class="counter_value" data-target="252"></h3>
+                        <p class="text-muted">Employee</p>
+                    </div>
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+
+            <!-- START TEAM -->
+            <table style="margin-left: 80px;">
+                <tbody>
+                    <tr class="row mt-5">
+                        <td class="col-md-6 col-lg-3">
+                            <div class="card team-box border-0 bg-transparent mt-3">
+                                <div class="position-relative mx-auto">
+                                    <img src="images/users/img1.jpg" alt="team" height="200"
+                                        class="img-fluid rounded-circle img-thumbnail">
+                                    <ul class="team-social list-unstyled">
+                                        <li><a href="#" class="primary-link"><i class="mdi mdi-facebook"></i></a></li>
+                                        <li class="my-1"><a href="#" class="primary-link"><i class="mdi mdi-twitter"></i></a>
+                                        </li>
+                                        <li><a href="#" class="primary-link"><i class="mdi mdi-skype"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="card-body text-center">
+                                    <h6 class="mb-0"><a href="#" class="primary-link">Wade G. Wilhite</a></h6>
+                                    <p class="text-muted fs-14 mb-0">CEO/Founder</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="col-md-6 col-lg-3">
+                            <div class="card team-box border-0 bg-transparent mt-3">
+                                <div class="position-relative mx-auto">
+                                    <img src="images/users/img2.jpg" alt="team" class="img-fluid rounded-circle img-thumbnail">
+                                    <ul class="team-social list-unstyled">
+                                        <li><a href="#" class="primary-link"><i class="mdi mdi-facebook"></i></a></li>
+                                        <li class="my-1"><a href="#" class="primary-link"><i class="mdi mdi-twitter"></i></a>
+                                        </li>
+                                        <li><a href="#" class="primary-link"><i class="mdi mdi-skype"></i></a></li>
+                                    </ul>
+                                    <!--end team-social-->
+                                </div>
+                                <div class="card-body text-center">
+                                    <h6 class="mb-0"><a href="#" class="primary-link">William S. Blay</a></h6>
+                                    <p class="text-muted fs-14 mb-0">R&D</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="col-md-6 col-lg-3">
+                            <div class="card team-box border-0 bg-transparent mt-3">
+                                <div class="position-relative mx-auto">
+                                    <img src="images/users/img5.jpg" alt="team" class="img-fluid rounded-circle img-thumbnail">
+                                    <ul class="team-social list-unstyled">
+                                        <li><a href="https://www.facebook.com/" class="primary-link"><i
+                                                    class="mdi mdi-facebook"></i></a></li>
+                                        <li class="my-1"><a href="https://twitter.com/finkd?lang=en" class="primary-link"><i
+                                                    class="mdi mdi-twitter"></i></a>
+                                        </li>
+                                        <li><a href="#" class="primary-link"><i class="mdi mdi-skype"></i></a></li>
+                                    </ul>
+                                    <!--end team-social-->
+                                </div>
+                                <div class="card-body text-center">
+                                    <h6 class="mb-0"><a href="#" class="primary-link">Matthew B. Morales</a></h6>
+                                    <p class="text-muted fs-14 mb-0">Faculty</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="col-md-6 col-lg-3">
+                            <div class="card team-box border-0 bg-transparent mt-3">
+                                <div class="position-relative mx-auto">
+                                    <img src="images/users/img4.jpg" alt="team" class="img-fluid rounded-circle img-thumbnail">
+                                    <ul class="team-social list-unstyled">
+                                        <li><a href="#" class="primary-link"><i class="mdi mdi-facebook"></i></a></li>
+                                        <li class="my-1"><a href="#" class="primary-link"><i class="mdi mdi-twitter"></i></a>
+                                        </li>
+                                        <li><a href="#" class="primary-link"><i class="mdi mdi-skype"></i></a></li>
+                                    </ul>
+                                    <!--end team-social-->
+                                </div>
+                                <div class="card-body text-center">
+                                    <h6 class="mb-0"><a href="#" class="primary-link">Luke L. Johnston</a></h6>
+                                    <p class="text-muted fs-14 mb-0">Faculty</p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!--end container-->
+    </section>
+    <!-- END ABOUT -->
+
+
+    <!-- START CTA -->
+    <section class="bg-cta" style="background-image: url('images/bg-cta02.jpg');">
+        <div class="bg-overlay"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="text-center text-white">
+                        <h2 class="mb-3">Let's get started with Scholarly</h2>
+                        <p class="text-white-50 mb-0">They are a good way to get you started if you want to learn
+                            something new with ease which will reduce the cost, efforts and time of
+                            the oneself.</p>
+                        <div class="mt-4 pt-4">
+                            <a href="#subscribe" class="btn btn-outline-white" data-bs-toggle="modal">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+        </div>
+        <!--end container-->
+    </section>
+    <!-- END CTA -->
+
+    <!-- START BLOG -->
+    <section class="section" id="blog">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="text-center mb-4">
+                        <h3>BLOG</h3>
+                        <p class="text-muted mt-2 mb-0">Discover the latest news from the world of aptitute test
+                            committees.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card blog-box border-0 mt-4">
+                        <div class="blog-img position-relative">
+                            <img src="images/blog/blog-01.jpeg" alt="Blog" class="img-fluid rounded">
+                            <div class="bg-overlay rounded"></div>
+                            <div class="author">
+                                <h6 class="fs-16 mb-0"><i class="mdi mdi-account-outline fs-17 align-middle me-1"></i>
+                                    Calvin Carlo</h6>
+                                <small><i class="mdi mdi-clock-outline fs-17 align-middle me-1"></i> 20th March
+                                    2021</small>
+                            </div>
+                        </div>
+                        <div class="mt-3">
+                            <a href="#" class="primary-link">
+                                <h6 class="fs-20">Preparing for the GMAT: Practice, Practice Practice - Wharton Business
+                                    School
+                                </h6>
+                            </a>
+                            <p class="text-muted">While it may invoke memories of number two pencils and five-syllable
+                                vocabulary words from the SATs, the standardized test called the Graduate Management
+                                Admissions Test — or GMAT — is a requirement for admission to Wharton’s MBA Program.</p>
+                            <div class="mt-3">
+                                <a href="#" class="text-primary">Read More <i
+                                        class="mdi mdi-arrow-right align-middle"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card blog-box border-0 mt-4">
+                        <div class="blog-img position-relative">
+                            <img src="images/blog/blog-02.png" alt="Blog" class="img-fluid rounded">
+                            <div class="bg-overlay rounded"></div>
+                            <div class="author">
+                                <h6 class="fs-16 mb-0"><i class="mdi mdi-account-outline fs-17 align-middle me-1"></i>
+                                    Theresa Sinclair</h6>
+                                <small><i class="mdi mdi-clock-outline fs-17 align-middle me-1"></i> 01th July
+                                    2021</small>
+                            </div>
+                        </div>
+                        <div class="mt-3">
+                            <a href="#" class="primary-link">
+                                <h6 class="fs-20">Study Abroad: Tips and tricks to ace GRE Verbal Reasoning section</h6>
+                            </a>
+                            <p class="text-muted">The Graduate Record Exam (GRE), administered by Educational Testing
+                                Service (ETS), is a standardised test, and its scores are used as one of the factors in
+                                the selection of applicants for admission to graduate and business programmes. Created
+                                more than 70 years ago, it is the world’s most popular admission test for graduate and
+                                professional schools, with more than 700,000 people taking the test each year.</p>
+                            <div class="mt-3">
+                                <a href="#" class="text-primary">Read More <i
+                                        class="mdi mdi-arrow-right align-middle"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card blog-box border-0 mt-4">
+                        <div class="blog-img position-relative">
+                            <img src="images/blog/blog-03.jpg" alt="Blog" class="img-fluid rounded">
+                            <div class="bg-overlay rounded"></div>
+                            <div class="author">
+                                <h6 class="fs-16 mb-0"><i class="mdi mdi-account-outline fs-17 align-middle me-1"></i>
+                                    Ruben Reed</h6>
+                                <small><i class="mdi mdi-clock-outline fs-17 align-middle me-1"></i> 25th July
+                                    2021</small>
+                            </div>
+                        </div>
+                        <div class="mt-3">
+                            <a href="#" class="primary-link">
+                                <h6 class="fs-20">A Brief History of the SAT, America’s Most Popular College Entrance
+                                    Exam</h6>
+                            </a>
+                            <p class="text-muted">During World War I, the U.S. Army needed a way to sort their new
+                                recruits and decide who would become officers, so they turned to Robert Yerkes, a
+                                psychologist who favored the brand-new IQ test, for a solution. The IQ screener Yerkes
+                                developed to test Army recruits eventually turned into the SAT. How did the most popular
+                                college admissions exam evolve from an Army test? What does the SAT measure?
+                            </p>
+                            <div class="mt-3">
+                                <a href="#" class="text-primary">Read More <i
+                                        class="mdi mdi-arrow-right align-middle"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END BLOG -->
+
+
+    <!--start contact-->
+    <section class="section bg-light" id="contact">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="text-center mb-5">
+                        <h3>Contact Us</h3>
+                        <p class="text-muted mt-2">How can we help you?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="contact-details mb-4 mb-lg-0">
+                        <p class="mb-3"><i class="mdi mdi-email-outline align-middle text-muted fs-20 me-2"></i> <span
+                                class="fw-medium">support@scholarly.com</span></p>
+                        <p class="mb-3"><i class="mdi mdi-web align-middle text-muted fs-20 me-2"></i> <span
+                                class="fw-medium">www.scholarly.com</span></p>
+                        <p class="mb-3"><i class="mdi mdi-phone align-middle text-muted fs-20 me-2"></i> <span
+                                class="fw-medium">+617 238 4831</span></p>
+                        <p class="mb-3"><i class="mdi mdi-hospital-building text-muted fs-20 me-2"></i> <span
+                                class="fw-medium">9:00 AM - 6:00 PM</span></p>
+                        <p class="mb-3"><i class="mdi mdi-map-marker-outline text-muted fs-20 me-2"></i> <span
+                                class="fw-medium">75 Saint Alphonsus Street, Boston, MA, 02120.</span></p>
+                    </div>
+                    <!--end contact-details-->
+                </div>
+                <!--end col-->
+                <div class="col-lg-7">
+                    <form method="post" onsubmit="return validateForm()" class="contact-form" name="myForm" id="myForm">
+                        <span id="error-msg"></span>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="position-relative mb-3">
+                                    <span class="input-group-text"><i class="mdi mdi-account-outline"></i></span>
+                                    <input name="name" id="name" type="text" class="form-control"
+                                        placeholder="Enter your name*">
+                                </div>
+                            </div>
+                            <!-- end col -->
+                            <div class="col-lg-6">
+                                <div class="position-relative mb-3">
+                                    <span class="input-group-text"><i class="mdi mdi-email-outline"></i></span>
+                                    <input name="email" id="email" type="email" class="form-control"
+                                        placeholder="Enter your email*">
+                                </div>
+                            </div>
+                            <!-- end col -->
+                            <div class="col-lg-12">
+                                <div class="position-relative mb-3">
+                                    <span class="input-group-text"><i class="mdi mdi-file-document-outline"></i></span>
+                                    <input name="subject" id="subject" type="text" class="form-control"
+                                        placeholder="Subject">
+                                </div>
+                            </div>
+                            <!-- end col -->
+                            <div class="col-lg-12">
+                                <div class="position-relative mb-3">
+                                    <span class="input-group-text align-items-start"><i
+                                            class="mdi mdi-comment-text-outline"></i></span>
+                                    <textarea name="comments" id="comments" rows="4" class="form-control"
+                                        placeholder="Enter your message*"></textarea>
+                                </div>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+                        <div class="row">
+                            <div class="col-sm-12 text-end">
+                                <input type="submit" id="submit" name="send" class="btn btn-primary"
+                                    value="Send Message">
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+                    </form>
+                    <!--end form-->
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+        </div>
+        <!--end container-->
+    </section>
+    <!--end contact-->
+
+
+    <!-- START FOOTER -->
+    <footer class="bg-dark section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-center">
+                        <ul class="list-inline social-list mb-0">
+                            <li class="list-inline-item"><a href="https://www.facebook.com/"
+                                    class="social-icon footer-link"><i class="mdi mdi-facebook"></i></a></li>
+                            <li class="list-inline-item"><a href="https://twitter.com/finkd?lang=en"
+                                    class="social-icon footer-link"><i class="mdi mdi-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/rutujamandlik/"
+                                    class="social-icon footer-link"><i class="mdi mdi-linkedin"></i></a></li>
+                            <li class="list-inline-item"><a href="https://google.com/"
+                                    class="social-icon footer-link"><i class="mdi mdi-google-plus"></i></a></li>
+                        </ul>
+                        <!--end social-->
+                    </div>
+                    <div class="footer-terms">
+                        <ul class="mb-0 list-inline text-center mt-4">
+                            <li class="list-inline-item"><a href="#" class="footer-link">Terms & Condition</a></li>
+                            <li class="list-inline-item"><a href="#" class="footer-link">Privacy Policy</a></li>
+                            <li class="list-inline-item"><a href="#" class="footer-link">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <!--end footer-terms-->
+                    <div class="mt-4 pt-2 text-center">
+                        <p class="text-white-50 mb-0">
+                            <script>document.write(new Date().getFullYear())</script> &copy; Scholarly - Study with <i
+                                class="mdi mdi-heart text-danger"></i> by
+                            <a href="https://getbootstrap.com/docs/4.4/components/navbar/"
+                                class="text-muted">Scholarly.</a>
+                        </p>
+                    </div>
+                </div>
+                <!--end row-->
+            </div>
+            <!--end row-->
+        </div>
+        <!--end container-->
+    </footer>
+    <!-- END FOOTER -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="presentationVideo" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content  bg-transparent border-0">
+                <div class="modal-body p-0">
+                    <div class="text-end">
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="ratio ratio-16x9">
+                        <video id="VisaChipCardVideo" class="video-box" controls>
+                            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <!--end modal-body-->
+            </div>
+            <!--end modal-content-->
+        </div>
+        <!--end modal-dialog-->
+    </div>
+    <!--end modal-->
+
+
+    <!--start subscribe-Modal -->
+    <div class="subscribe-modal modal fade" id="subscribe" tabindex="-1" aria-labelledby="subscribeform"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!--end modal-header-->
+                <div class="modal-body text-center pt-0">
+                    <img src="images/subscribe.png" alt="subscribe" class="img-fluid" />
+                    <h5 class="modal-title mt-2 mb-2" id="subscribeform">Subscribe</h5>
+                    <p class="text-muted mb-4">
+                        Join your hand with us for a better life <br /> and beautiful future.
+                    </p>
+                    <form action="#">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control border" id="subscribeemail"
+                                placeholder="Enter your email" />
+                            <button class="btn btn-primary btn-sm" type="submit" id="button-addon2">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+                <!--end modal-body-->
+            </div>
+            <!--end modal-content-->
+        </div>
+        <!--end modal-dialog-->
+    </div>
+    <!--end SUBSCRIBE modal-->
+
+    <!-- Style switcher -->
+    <div id="style-switcher" onclick="toggleSwitcher()" style="left: -189px;">
+        <div>
+            <h6>Select your color</h6>
+            <ul class="pattern list-unstyled mb-0">
+                <li>
+                    <a class="color1" href="javascript: void(0);" onclick="setColor('default')"></a>
+                </li>
+                <li>
+                    <a class="color2" href="javascript: void(0);" onclick="setColor('success')"></a>
+                </li>
+                <li>
+                    <a class="color3" href="javascript: void(0);" onclick="setColor('warning')"></a>
+                </li>
+                <li>
+                    <a class="color4" href="javascript: void(0);" onclick="setColor('orange')"></a>
+                </li>
+                <li>
+                    <a class="color5" href="javascript: void(0);" onclick="setColor('info')"></a>
+                </li>
+                <li>
+                    <a class="color6" href="javascript: void(0);" onclick="setColor('purple')"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="bottom">
+            <a href="javascript: void(0);" class="settings rounded-end"><i class="mdi mdi-cog mdi-spin"></i></a>
+        </div>
+    </div>
+    <!-- end switcher-->
+
+    <!--start back-to-top-->
+    <button onclick="topFunction()" id="back-to-top">
+        <i class="mdi mdi-arrow-up"></i>
+    </button>
+    <!--end back-to-top-->
+
+
+    <!-- Bootstrap Bundale js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- Swiper Slider js -->
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <!-- Contact Js -->
+    <script src="js/contact.js"></script>
+
+    <!-- Index-init Js -->
+    <script src="js/index.init.js"></script>
+
+    <!-- App js -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>
