@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&family=Nunito:wght@200;300;400;500;600&display=swap');
+@import 'variables';
+@import 'navbar';
+@import 'home';
+@import 'about';
+@import 'menu';
+@import 'contact';
+@import 'footer';
+@import 'menu2';
+@import 'book';
+@import 'function';
+@import 'mobile';
+
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+*::selection {
+    background-color: $main-color;
+    color: $light;
+}
+
+::-webkit-scrollbar {
+    height: .5rem;
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $main-color;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6.5rem;
+}
+
+section {
+    padding: 2rem 10%;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.heading img {
+    height: 4rem;
+    margin-bottom: 1rem;
+}
+
+.heading h3 {
+    font-size: 4rem;
+    color: $dark;
+    font-family: 'Merienda One', cursive;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    background-color: $main-color;
+    cursor: pointer;
+    color: $light;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+}
+
+.btn:hover {
+    background-color: $dark;
+}
+
+
+
+

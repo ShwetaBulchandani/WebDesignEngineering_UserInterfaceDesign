@@ -1,0 +1,69 @@
+@import 'variables';
+
+//placeholder selector
+%menu{
+    font-size: 2rem;
+    color: $main-color;
+    line-height: 1.8;
+}
+
+//using mixin
+@mixin display {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+//interpolation
+$b: "border";
+$p: "box";
+
+.menu {
+    background: url(../images/menu-bg-neww.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .#{$p}-container {
+        @include display;
+        gap: 2rem;
+        justify-content: center;
+
+        .#{$p} {
+            flex: 1 1 42rem;
+            padding: 2rem;
+            #{$b}: $border;
+            #{$b}-radius: $border-radius;
+            @include display;
+            align-items: center;
+            gap: 1.5rem;
+            margin-left: 6rem;
+
+            &:hover {
+                #{$b}: $border-hover;
+                #{$b}-radius: $border-radius-hover;
+            }
+
+            img {
+                height: 8rem;
+                margin-left: -6rem;
+            }
+
+            .content {
+                h3 {
+                    @extend %menu;
+                    font-size: 2.2rem;
+                }
+
+                p {
+                    font-size: 1.6rem;
+                    color: $main-color;
+                    line-height: 1.8;
+                    padding: 1rem 0;
+                }
+
+                span {
+                    @extend %menu;
+                }
+            }
+        }
+    }
+}

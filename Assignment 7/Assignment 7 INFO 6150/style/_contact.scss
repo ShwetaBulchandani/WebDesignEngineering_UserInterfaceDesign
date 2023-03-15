@@ -1,0 +1,49 @@
+@import 'variables';
+@import 'function';
+
+//mixin
+@mixin display {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+//custom property
+$size: 100%;
+
+.contact {
+    .row {
+        @include display;
+        align-items: center;
+        gap: 2rem;
+
+        .image {
+            flex: 1 1 50rem;
+
+            img {
+                width: $size;
+            }
+        }
+
+        form {
+            flex: 1 1 30rem;
+            border: $border;
+            padding: 2rem;
+            text-align: center;
+
+            h3 {
+                font-size: wordsize(3,3) * 1px;
+                margin-bottom: 1rem;
+                color: $dark;
+            }
+
+            .box {
+                width: $size;
+                padding: 1.4rem;
+                font-size: 1.8rem;
+                color: $dark;
+                border: $border;
+                margin: 1rem 0;
+            }
+        }
+    }
+}

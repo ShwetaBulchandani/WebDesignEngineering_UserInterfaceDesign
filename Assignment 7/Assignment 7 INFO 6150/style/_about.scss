@@ -1,0 +1,74 @@
+@import 'variables';
+
+//mixin
+@mixin display {
+    display: flex;
+}
+
+@mixin animate($animation, $duration, $method, $times) {
+    animation: $animation $duration $method $times;
+}
+
+@mixin keyframes($name) {
+    @keyframes #{$name} {
+        @content;
+    }
+}
+
+
+.about {
+    .row {
+        @include display;
+        align-items: center;
+        gap: 1.5rem;
+
+        .image {
+            flex: 1 1 42rem;
+
+            img {
+                //custom property
+                $size: 100%;
+                width: $size;
+                }
+            }
+        }
+
+        .content {
+            .title {
+                color: $main-color;
+                font-size: 3rem;
+                line-height: 1.8;
+            }
+
+            p {
+                color: $main-color;
+                font-size: 1.5rem;
+                line-height: 1.8;
+                padding: 1rem 0;
+            }
+
+            .icons-container {
+                @include display;
+                gap: 1rem;
+                padding-top: 3rem;
+
+                .icons {
+                    flex: 1 1 15rem;
+                    padding: 2rem;
+                    text-align: center;
+                    border: $border;
+                    border-radius: $border-radius;
+
+                    img {
+                        height: 5rem;
+                    }
+
+                    h3 {
+                        font-size: 1.7rem;
+                        padding-top: 1rem;
+                        color: $main-color;
+                    }
+                }
+            }
+        }
+    }

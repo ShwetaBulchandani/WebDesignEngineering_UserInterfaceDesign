@@ -1,0 +1,79 @@
+@import 'variables';
+
+//mixin
+@mixin display {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0rem);
+    }
+
+    50% {
+        transform: translateY(-7rem);
+    }
+}
+
+#menu-btn {
+    font-size: 3rem;
+    color: $main-color;
+    cursor: pointer;
+    display: none;
+}
+
+.home {
+    min-height: 100vh;
+    padding-top: 12rem;
+    background: url(../images/home-bg-new.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .row {
+        @include display;
+        align-items: center;
+        
+        gap: 1.5rem;
+
+        .content {
+            flex: 1 1 42rem;
+
+            h3 {
+                font-size: 6.5rem;
+                color: $main-color;
+                text-transform: capitalize;
+                font-family: 'Merienda One', cursive;
+            }
+        }
+
+        .image {
+            flex: 1 1 42rem;
+            padding-top: 10rem;
+            text-align: center;
+
+            img {
+                height: 35rem;
+                animation: float 4s linear infinite;
+            }
+        }
+    }
+
+    .image-slider {
+        text-align: center;
+        padding: 3rem 0;
+
+        img {
+            height: 9rem;
+            margin: 0 .5rem;
+            cursor: pointer;
+            margin-top: 5rem;
+
+            &:hover {
+                transform: translateY(-2rem);
+            }
+        }
+    }
+}

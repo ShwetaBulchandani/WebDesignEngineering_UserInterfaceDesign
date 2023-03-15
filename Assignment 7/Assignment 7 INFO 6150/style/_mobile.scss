@@ -1,0 +1,213 @@
+@import 'variables';
+
+@media (max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+
+        .menu1 {
+            .box-container1 {
+                max-width: max-content !important;
+                width: max-content;
+                display: grid;
+                align-items: center;
+                grid-template-columns: repeat(1, 1fr);
+                gap: 3rem;
+                justify-content: center;
+                margin-left: 180px;
+    
+                .box1 {
+                    text-align: center;
+    
+                    img {
+                        //custom property
+                        $size: 100%;
+                        width: $size;
+                        margin-bottom: 1rem;
+                    }
+    
+                    h3 {
+                        font-size: wordsize(3, 3) * 1px;
+                        color: $dark;
+                    }
+                }
+            }
+        }
+}
+
+@media (max-width:768px) {
+    #menu-btn {
+        display: inline-block;
+        transition: .2s linear;
+    }
+
+    #menu-btn.fa-times {
+        transform: rotate(180deg);
+    }
+
+
+        #menu-btn {
+            display: inline-block;
+            transition: .2s linear;
+        }
+    
+        #menu-btn.fa-times {
+            transform: rotate(180deg);
+        }
+
+.menu1 {
+    .box-container1 {
+        width: max-content;
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+        justify-content: center;
+        margin-left: 140px;
+
+        .box1 {
+            text-align: center;
+
+            img {
+                //custom property
+                $size: 100%;
+                width: $size;
+                margin-bottom: 1rem;
+            }
+
+            h3 {
+                font-size: wordsize(3, 3) * 1px;
+                color: $dark;
+            }
+        }
+    }
+}
+
+    .header {
+        .flex {
+            .navbar {
+                position: absolute;
+                top: 99%;
+                left: 0;
+                right: 0;
+                background-color: $light;
+                border-top: $border;
+                border-bottom: $border;
+                clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+                transition: .2s linear;
+
+                a {
+                    display: block;
+                    margin: 2rem;
+                }
+            }
+
+            .navbar.active {
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            }
+        }
+    }
+
+    .home-bg {
+        background-position: left;
+
+        .home {
+            justify-content: center;
+
+            .content {
+                h3 {
+                    font-size: 4rem;
+                }
+            }
+        }
+    }
+
+    .about {
+        .row{
+            .image{
+                img{
+                    width: 300px;
+                    padding-right: 80px;
+                }
+            }
+        }
+        
+        .content {
+            h3 {
+                font-size: 3rem;
+            }
+        }
+    }
+
+}
+
+@media (max-width:450px) {
+    html {
+        font-size: 50%;
+    }
+
+    .heading {
+        img {
+            height: 3rem;
+        }
+
+        h3 {
+            font-size: 3rem;
+        }
+    }
+
+    .menu{
+        .btn{
+            align-items: center;
+            justify-content: center;
+            margin-left: 25% !important;
+            
+        }
+    }
+
+        .about {
+            .row {
+                display: block;
+                .image {
+                    img {
+                        width: 300px;
+                        padding-right: 40px;
+                    }
+                }
+            }
+    
+            .content {
+                h3 {
+                    font-size: 3rem;
+                }
+            }
+        }
+
+        .menu1 {
+            .box-container1 {
+                overflow-x: hidden;
+                display: grid;
+                align-items: center;
+                grid-template-columns: repeat(1, 200px);
+                gap: 3rem;
+                justify-content: center;
+                margin-left: 60px;
+    
+                .box1 {
+                    text-align: center;
+    
+                    img {
+                        //custom property
+                        $size: 100%;
+                        width: $size;
+                        margin-bottom: 1rem;
+                    }
+    
+                    h3 {
+                        font-size: wordsize(3, 3) * 1px;
+                        color: $dark;
+                    }
+                }
+            }
+        }
+}

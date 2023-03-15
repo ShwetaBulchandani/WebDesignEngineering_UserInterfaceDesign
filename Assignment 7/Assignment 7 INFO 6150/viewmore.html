@@ -1,0 +1,136 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>TravelBuddy</title>
+
+    <link rel="icon" type="image/x-icon" href="./images/logo-new.png" />
+  </head>
+  <body>
+    <!-- header section -->
+    <header class="header">
+      <section class="flex">
+        <a href="./index.html" class="logo"
+          ><img src="./images/logo-new.png" alt=""
+        /></a>
+        <nav class="navbar">
+          <a href="./index.html">Home</a>
+          <a href="#menu">Travel Packages</a>
+          <a href="#book">Request Booking</a>
+        </nav>
+        <div id="menu-btn" class="fas fa-bars"></div>
+      </section>
+    </header>
+
+    <!-- menu section -->
+    <section class="menu1" id="menu1">
+      <div class="heading">
+        <!-- <img src="./images/heading-img.png" alt="" /> -->
+        <h3>Explore More Travel Packages</h3>
+      </div>
+
+      <div class="box-container1">
+        <div class="box1" id="country-1">
+          <img src="images/se.svg" alt="" style = "height: 300px; width: 300px;"/>
+          <h3>Sweden</h3>
+        </div>
+
+        <div class="box1" id="country-2">
+          <img src="images/ro.svg" alt="" style = "height: 300px; width: 300px;"/>
+          <h3>Romania</h3>
+        </div>
+
+        <div class="box1" id="country-3">
+          <img src="images/no.svg" alt="" style = "height: 300px; width: 300px;"/>
+          <h3>Norway</h3>
+        </div>
+
+        <div class="box1" id="country-4">
+          <img src="images/mx.svg" alt="" style = "height: 300px; width: 300px;"/>
+          <h3>Mexico</h3>
+        </div>
+
+        <div class="box1" id="country-5">
+          <img src="images/nl.svg" alt="" style = "height: 300px; width: 300px;"/>
+          <h3>Netherlands</h3>
+        </div>
+
+        <div class="box1" id="country-6">
+          <img src="images/my.svg" alt="" style = "height: 300px; width: 300px;"/>
+          <h3>Malaysia</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- booking section -->
+    <section class="book" id="book">
+      <div class="heading">
+        <!-- <img src="./images/heading-img.png" alt="" /> -->
+        <h3>Request Booking</h3>
+      </div>
+
+      <form action="">
+        <input type="text" placeholder="Your Name" class="box" />
+        <input type="email" placeholder="Your Email ID" class="box" />
+        <input type="number" placeholder="Your Mobile Number" class="box" />
+        <input type="number" placeholder="Number of Travelers" class="box" />
+        <textarea
+          name=""
+          placeholder="Your Message/Inquiry"
+          class="box"
+          id=""
+          cols="30"
+          rows="10"
+        ></textarea>
+
+        <input type="submit" value="Send Message" class="btn" />
+      </form>
+    </section>
+
+    <!-- footer section -->
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <i class="fas fa-envelope"></i>
+          <h3>Our Email</h3>
+          <p>contact@travelbuddy.com</p>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-clock"></i>
+          <h3>Opening Hours</h3>
+          <p>10:00am to 11:00pm</p>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-map-marker-alt"></i>
+          <h3>Office Location</h3>
+          <p>Boston, MA - 02215</p>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-phone"></i>
+          <h3>Our Number</h3>
+          <p>+1 617-238-4831</p>
+        </div>
+      </div>
+
+      <div class="credit">
+        &copy; Copyright @ 2023 by <span>TravelBuddy</span> | All Rights
+        Reserved!
+      </div>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

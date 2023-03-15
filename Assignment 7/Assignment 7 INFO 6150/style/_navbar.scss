@@ -1,0 +1,46 @@
+@import 'variables';
+
+//using mixin
+@mixin position {
+    position: sticky;
+}
+@mixin display {
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    @include position;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: $light;
+    box-shadow: $box-shadow;
+    z-index: 100;
+
+    .flex {
+        @include display;
+        justify-content: space-between;
+        position: relative;
+        padding: 1.5rem 2rem;
+
+        .logo {
+            img {
+                height: 4.5rem;
+            }
+        }
+
+        .navbar {
+            a {
+                margin-left: 5rem;
+                font-size: 2rem;
+                color: $dark;
+
+                &:hover {
+                    text-decoration: underline;
+                    color: $main-color;
+                }
+            }
+        }
+    }
+}

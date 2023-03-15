@@ -1,0 +1,58 @@
+@import 'variables';
+@import 'function';
+
+//mixin
+@mixin display {
+    display: grid;
+    align-items: flex-start;
+}
+
+.footer {
+    .box-container {
+        @include display;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 2fr));
+        gap: 1.5rem;
+
+        .box {
+            text-align: center;
+
+            i {
+                //custom property
+                $size: 6rem;
+                font-size: 2.5rem;
+                line-height: 6rem;
+                height: 6rem;
+                width: $size;
+                border-radius: 50%;
+                background-color: $main-color;
+                color: $light;
+                margin-bottom: 1rem;
+            }
+
+            h3 {
+                margin: 1rem 0;
+                font-size: wordsize(2, 4) * 1px;
+                color: $dark;
+            }
+
+            p {
+                line-height: 2;
+                font-size: 1.2rem;
+                color: $main-color;
+            }
+        }
+    }
+
+    .credit {
+        text-align: center;
+        margin-top: 3rem;
+        padding-top: 2.5rem;
+        border-top: $border;
+        font-size: 2rem;
+        color: $dark;
+
+        span {
+            color: $main-color;
+        }
+    }
+}
